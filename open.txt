@@ -1,1 +1,77 @@
 Este é o conteúdo do curso.
+
+O Git funciona de 3 estados.O 1 estado é o Working directory onde estão os arquivos que foram modificados, excluidos ou adicionados portanto tudo que é novo ao iniciarmos um arquivo ele está em adicionado, quando este já está em outro estado que é o que foi adicionado ao commit e tem algo de diferente que mudamos ele passa a ser modificado e quando deletamos um arquivo o git trabalha ese arquivo como uma nova adição na qual é a remoção desse arquivo.
+O 2 estado é a Staging area, aqui fica todos os arquivos que foram adicionados  recentemente e por isso eles ficam em estado de preparação antes de fazer o commit e seu versionamento.
+O 3 estado é o commit aqui como o nome diz é a submissão dos arquivos a serem salvos e onde o seu versionamento é gerado de forma local.
+
+              # Comandos git
+clone do repositorio e de todos seus versionamentos
+- git clone nome_arquivo
+estado do arquivo no Working directory
+- git status
+adiciona os arquivos para area de preparação
+- git add nome_da_pasta
+salva os arquivos que estão na area de preparação e submete eles localmente
+- git commit -m "nome a ser comentado"
+submete os dados salvos localmente do repositorio para o servidor com seus versionamentos.
+- git push
+
+
+# Criar pasta
+- mkdir nome_pasta_a_ser_criada
+# Excluir pasta
+- rm -r nome_da_pasta
+# Renomeia o arquivo
+- mv nome_arquivo nome_a_ser_dado
+
+# detalhes das configurações do git e do usuario credenciado
+- git config --list
+
+# configura o email do github na maquina local
+- git config --global user.email "emailcadastradonogithub"
+
+# configura o nome do usuario do github na maquina local
+- git config --global user.name "nome sobrenome"
+
+# inicia um projeto git
+- git init
+
+# compara as diferenças do working directory com o ultimo commit efetuado.
+- git diff
+
+# compara as diferenças do staging area com o ultimo commit efetuado.
+- git diff --cached ou git diff --staged
+
+# lista todos os commits efetuados no projeto
+- git log
+
+# lista todos os commits efetuados no projeto em uma linha
+- git log --oneline
+
+# Volta a versão na qual queremos de um commit efetuado
+- git checkout alguns_numeros_do_chadocommit
+
+# Volta para a versão master do ultimo commit efetuado
+- git checkout master
+
+# Volta o arquivo como estava antes de ser modificado ou deletado no estado working directory
+- git checkout nome_arquivo
+
+# Volta todos os arquivos de uma vez como estavam antes de ser modificado ou deletado no estado working directory ou staged area
+- git reset --hard
+
+# Volta todos os arquivos de uma vez como estavam antes de ser adicionado no estado working directory
+- git clean -f
+
+
+# copiar repositorio do github de um projeto já existente para o seu
+- git clone url/do/arquivo/aserclonado
+- entrar na pasta clonada cd ./nomedapasta/
+- git remote -v lista as urls do arquivo clonado com o caminho dessa pasta
+- git remote set-url origin urldoarquivoclonado ele muda o destino/copia para outra url o arquivo que foi clonado.
+- git remote -v verifique se a urlfoimudada do usuario que estava antes para o seu em que será destinado o arquivo.
+- git push depois de confirmado só salvar no servidor.
+
+# Atualizar os dados na maquina local com os dados atualizados do servidor
+- git pull
+-----------------------------------------------------
