@@ -4,7 +4,7 @@ O Git funciona de 3 estados.O 1 estado é o Working directory onde estão os arq
 O 2 estado é a Staging area, aqui fica todos os arquivos que foram adicionados  recentemente e por isso eles ficam em estado de preparação antes de fazer o commit e seu versionamento.
 O 3 estado é o commit aqui como o nome diz é a submissão dos arquivos a serem salvos e onde o seu versionamento é gerado de forma local.
 
-              # Comandos git
+              #Comandos git
 clone do repositorio e de todos seus versionamentos
 - git clone nome_arquivo
 estado do arquivo no Working directory
